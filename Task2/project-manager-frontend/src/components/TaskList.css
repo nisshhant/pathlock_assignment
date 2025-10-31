@@ -1,0 +1,198 @@
+/* ---------- Layout ---------- */
+.task-list-container {
+  padding: 1.5rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ---------- Smart Schedule Button ---------- */
+.smart-schedule-btn {
+  background-color: #7c3aed; /* violet-600 to make it distinct from Add button */
+  color: white;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.smart-schedule-btn:hover {
+  background-color: #6d28d9; /* violet-700 */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.smart-schedule-btn:active {
+  transform: translateY(1px);
+}
+
+/* ---------- Schedule Container ---------- */
+.schedule-section {
+  margin-top: 1.5rem;
+  background: #f9fafb; /* gray-50 */
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- Header ---------- */
+.schedule-section h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0d9488; /* teal-600 */
+  margin-bottom: 1rem;
+}
+
+/* ---------- Schedule List ---------- */
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.8rem; /* ← spacing between items */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+.schedule-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Date Styling ---------- */
+.schedule-date {
+  color: #4b5563; /* gray-600 */
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-left: 1.5rem; /* spacing between task name and date */
+}
+
+/* ---------- Header ---------- */
+.task-list-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b4d3ff; /* light bluish-gray tone to match project header */
+  margin-bottom: 1.25rem;
+}
+
+/* ---------- Form Styling ---------- */
+.task-form {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  background: #f9fafb;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.06);
+}
+
+.task-form input {
+  flex: 1;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-form input:focus {
+  border-color: #14b8a6; /* teal-500 */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(20, 184, 166, 0.3);
+}
+
+.task-form button {
+  background-color: #0d9488; /* teal-600 */
+  color: white;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.1s ease;
+}
+
+.task-form button:hover {
+  background-color: #0f766e; /* darker teal */
+  transform: translateY(-2px);
+}
+
+.task-form button:active {
+  transform: translateY(1px);
+}
+
+/* ---------- Task List ---------- */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #f3f4f6;
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease, transform 0.15s ease;
+}
+
+.task-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+}
+
+/* ---------- Task Text ---------- */
+.task-title {
+  font-size: 1rem;
+  color: #0d9488; /* teal-600 */
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.task-title:hover {
+  color: #0f766e;
+  text-decoration: underline;
+}
+
+.task-title.completed {
+  color: #6b7280; /* gray-500 */
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+/* ---------- Delete Button ---------- */
+.task-delete-btn {
+  color: #f97316; /* orange-600 */
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.task-delete-btn:hover {
+  color: #ea580c; /* orange-700 */
+  transform: scale(1.05);
+}
